@@ -6,7 +6,7 @@ import { getAuthorsQuery, addBookMutation, getBooksQuery } from '../queries/quer
 const AddBook = () => {
   const [state, setState] = React.useState({ name: '', genre: '', authorId: '' });
   const { loading, error, data } = useQuery(getAuthorsQuery);
-  const [addBook, { data: bookAddReturn }] = useMutation(addBookMutation);
+  const [addBook] = useMutation(addBookMutation);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;

@@ -19,7 +19,7 @@ const BookDetails = ({ bookId }) => {
   }
 
   return (
-    <div>
+    <div id="book-details">
       <h1>Book Details</h1>
       {!data || !data.book
         ? (<p>No Book Selected</p>)
