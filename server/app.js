@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 
 // connect to mongoose db
-mongoose.connect('mongodb+srv://Airish:zpxlcmvn@graphql-cluster.lkwr8.mongodb.net/graph?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://Airish:<password>@graphql-cluster.lkwr8.mongodb.net/graph?retryWrites=true&w=majority');
 mongoose.connection.once('open', () => {
   console.log('connected to database');
 });
