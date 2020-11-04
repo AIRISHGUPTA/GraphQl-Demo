@@ -1,0 +1,51 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "react/no-array-index-key": 0,
+    "react/jsx-props-no-spreading": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/mouse-events-have-key-events": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "no-multiple-empty-lines": [2, {"max": 1, "maxBOF": 0}],
+    "camelcase": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-no-bind": 0,
+    "react/button-has-type": 0,
+    "semi": [2, "always"],
+    "react/jsx-filename-extension": 0,
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": [1, {"devDependencies": true}],
+    "max-len": [
+      2,
+      {
+        "code": 120,
+        "ignoreComments": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-empty": [2, { "allowEmptyCatch": true } ]
+  }
+}
